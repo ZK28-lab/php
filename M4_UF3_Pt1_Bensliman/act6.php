@@ -1,6 +1,17 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
 <?php include ('cap.php'); ?>
 <?php echo '<h3>Aquest fitxer és '.basename(__FILE__).'</h3>'; ?>
 
+<?php
 //obté els numeros del formulari i converteix-los en un vector
 if (isset($_POST['numeros'])) {
     $cadenaNumeros = $_POST['numeros'];
@@ -15,7 +26,7 @@ if (isset($_POST['numeros'])) {
     });
 
     //Mostra el vector de numeros parells
-    echo "<p> Vector de números parells: " . implode(',', $vectorParells) . "</p>
+    echo "<p> Vector de números parells: " . implode(',', $vectorParells) . "</p>";
 
     //Mostra la longitud del vector de números parells 
     echo "<p>Total de númeroxs parells: " . count($vectorParells) . "</p>";
@@ -24,3 +35,9 @@ if (isset($_POST['numeros'])) {
 }
 ?>
 <?php include ('peu.php');?>
+
+
+
+</body>
+</html>
+
